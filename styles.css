@@ -288,6 +288,7 @@ main {
 
 footer {
   padding: 5vh;
+  background-color: #222431;
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -386,3 +387,97 @@ footer {
   align-items: center;
   min-height: 100vh;
 }
+
+
+#education {
+  padding: 2rem 0;
+}
+
+.education-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.education-year {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.education-school {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.education-details {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.education-details li {
+  color: var(--text-secondary);
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.education-details li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+#education {
+  padding: 2rem 0;
+}
+
+.education-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.education-card {
+  flex: 1;
+  min-width: 400px;
+  max-width: 700px;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .education-card {
+    min-width: 100%;
+  }
+}
+
